@@ -1,0 +1,13 @@
+<h1>Games#score</h1>
+<p>Find me in app/views/games/score.html.erb</p>
+
+
+<h1>Your score:</h1>
+
+<p>Your word: <%= @result[:word] %></p>
+<p>Score: <%= @result[:score] %></p>
+<p><%= @message %></p>
+
+<p>Total score: <%= session[:total_score] %></p>
+
+<%= link_to "New game", new_path %>
